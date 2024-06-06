@@ -30,3 +30,10 @@ INSERT INTO empleado (nombre)
 
 INSERT INTO empleado (nombre) 
     VALUES ("Juan perez");
+
+/* agregar una columna */
+ALTER TABLE empleado
+ADD COLUMN antiguedad INT DEFAULT 0;
+
+INSERT INTO empleado (nombre) 
+    VALUES ("Esteban");
