@@ -2,9 +2,11 @@
 
 SHOW DATABASES; /* para ver todas las base de datos actuales */
 
-DROP DATABASE nombre_db; /* para eliminar una base de datos */
+DROP DATABASE primer_db; /* para eliminar una base de datos */
 
-USE nombre_db; /* para usar una base de datos */
+CREATE DATABASE primer_db;
+
+USE primer_db; /* para usar una base de datos */
 
 /* para crear una tabla en una base de datos */
 CREATE TABLE empleado (
@@ -37,3 +39,15 @@ ADD COLUMN antiguedad INT DEFAULT 0;
 
 INSERT INTO empleado (nombre) 
     VALUES ("Esteban");
+
+
+/* Para mostrar cualquier registro que coincida con la condicion*/
+SELECT * FROM empleado WHERE id = 2;
+
+
+/* Limita la cantidad de resultados */
+SELECT * FROM empleado WHERE id = 2 LIMIT 2;
+
+/* Indica desde donde comenzar a mostrar resultados */
+SELECT * FROM empleado WHERE id = 2 LIMIT 2 OFFSET 1;
+
