@@ -20,4 +20,6 @@ VALUES ("Juan perez");
 INSERT INTO empleado (nombre) 
 VALUES ("Esteban");
 
+
+
 SELECT * FROM empleado;
